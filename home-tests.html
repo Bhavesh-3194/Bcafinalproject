@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Medical Care - Home Tests</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Medical Care</strong></li>
+        </ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="appointment.html">Appointments</a></li>
+            <li><a href="home-tests.html">Home Tests</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section>
+            <hgroup>
+                <h1>Book a Home Test</h1>
+                <h2>Convenient Home Testing Services</h2>
+            </hgroup>
+
+            <form>
+                <label for="test-type">Select Test Type</label>
+                <select id="test-type" name="testType" required>
+                    <option value="">-- Choose --</option>
+                    <option value="Blood Test">Blood Test</option>
+                    <option value="Sputum Test">Sputum Test</option>
+                    <option value="Urine Test">Urine Test</option>
+                </select>
+
+                <label for="user-name">Your Name</label>
+                <input type="text" id="user-name" name="name" required placeholder="Enter your name">
+
+                <label for="user-phone">Phone Number</label>
+                <input type="tel" id="user-phone" name="phone" required placeholder="Enter your phone number">
+
+                <label for="user-address">Address</label>
+                <textarea id="user-address" name="address" required placeholder="Enter your address"></textarea>
+
+                <button type="submit">Book Test</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="container">
+        <small><a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a></small>
+    </

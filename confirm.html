@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Appointment Confirmation</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .confirmation {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Medical Care</strong></li>
+        </ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="appointment.html">Appointments</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="confirmation">
+            <hgroup>
+                <h2>Appointment Confirmed!</h2>
+                <h3>Thank you for booking with Medical Care</h3>
+            </hgroup>
+            <p>Your appointment details are as follows:</p>
+            <p><strong>Doctor:</strong> <span id="doctor-name">[Doctor Name]</span></p>
+            <p><strong>Time Slot:</strong> <span id="time-slot">[Time Slot]</span></p>
+            <button onclick="window.location.href='appointment.html'">Book Another Appointment</button>
+        </section>
+    </main>
+
+    <footer class="container">
+        <small><a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a></small>
+    </footer>
+
+    <script>
+        // Example: Populate details dynamically (replace with actual logic)
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById('doctor-name').textContent = params.get('doctor') || '[Doctor Name]';
+        document.getElementById('time-slot').textContent = params.get('time') || '[Time Slot]';
+    </script>
+</body>
+</html>

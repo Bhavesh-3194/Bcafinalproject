@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Medical Care - Appointments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Medical Care</strong></li>
+        </ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="appointment.html">Appointments</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section>
+            <hgroup>
+                <h2>Book an Appointment</h2>
+                <h3>Select Your Specialist</h3>
+            </hgroup>
+
+            <!-- Orthopedics -->
+            <h3>Orthopedics</h3>
+            <ul>
+                <li>
+                    <strong>Dr. Ak Sharma</strong><br>
+                    51A G.T.Road, Howrah<br>
+                    Phone: +91 1234567890<br>
+                    <select id="slot-ortho-ak">
+                        <option>10am - 11am</option>
+                        <option>11am - 12pm</option>
+                        <option>1pm - 2pm</option>
+                        <option>2pm - 3pm</option>
+                    </select>
+                    <button onclick="bookAppointment('Dr. Ak Sharma', 'slot-ortho-ak')">Book Slot</button>
+                </li>
+                <li>
+                    <strong>Dr. Biswajit Chatterjee</strong><br>
+                    456 Baguihati, Kolkata<br>
+                    Phone: +91 1234567890<br>
+                    <select id="slot-ortho-biswa">
+                        <option>10am - 11am</option>
+                        <option>11am - 12pm</option>
+                        <option>1pm - 2pm</option>
+                        <option>2pm - 3pm</option>
+                    </select>
+                    <button onclick="bookAppointment('Dr. Biswajit Chatterjee', 'slot-ortho-biswa')">Book Slot</button>
+                </li>
+                <li>
+                    <strong>Dr. Rani Singh</strong><br>
+                    78/2 Agrsain Street, Howrah<br>
+                    Phone: +91 1234567890<br>
+                    <select id="slot-ortho-rani">
+                        <option>10am - 11am</option>
+                        <option>11am - 12pm</option>
+                        <option>1pm - 2pm</option>
+                        <option>2pm - 3pm</option>
+                    </select>
+                    <button onclick="bookAppointment('Dr. Rani Singh', 'slot-ortho-rani')">Book Slot</button>
+                </li>
+            </ul>
+
+            <!-- Pediatricians -->
+            <h3>Pediatricians</h3>
+            <ul>
+                <li>
+                    <strong>Dr. Anu Tiwari</strong><br>
+                    101 Camac Street, Kolkata<br>
+                    Phone: +91 1234567890<br>
+                    <select id="slot-pedia-anu">
+                        <option>10am - 11am</option>
+                        <option>11am - 12pm</option>
+                        <option>1pm - 2pm</option>
+                        <option>2pm - 3pm</option>
+                    </select>
+                    <button onclick="bookAppointment('Dr. Anu Tiwari', 'slot-pedia-anu')">Book Slot</button>
+                </li>
+                <li>
+                    <strong>Dr. Vinay Aswa</strong><br>
+                    51/5 G.T.Road, Howrah<br>
+                    Phone: +91 1234567890<br>
+                    <select id="slot-pedia-aswa">
+                        <option>10am - 11am</option>
+                        <option>11am - 12pm</option>
+                        <option>1pm - 2pm</option>
+                        <option>2pm - 3pm</option>
+                    </select>
+                    <button onclick="bookAppointment('Dr. Vinay Aswa', 'slot-pedia-aswa')">Book Slot</button>
+                </li>
+                <li>
+                    <strong>Dr. Navya Singh</strong><br>
+                    30C Rose Mary Lane, Howrah<br>
+                    Phone: +91 1234567890<br>
+                    <select id="slot-pedia-navya">
+                        <option>10am - 11am</option>
+                        <option>11am - 12pm</option>
+                        <option>1pm - 2pm</option>
+                        <option>2pm - 3pm</option>
+                    </select>
+                    <button onclick="bookAppointment('Dr. Navya Singh', 'slot-pedia-navya')">Book Slot</button>
+                </li>
+            </ul>
+
+            <!-- Gynecologists -->
+            <h3>Gynecologists</h3>
+            <ul>
+                <li>
+                    <strong>Dr. Sunita Verma</strong><br>
+                    12/3A lakhotia Medical Centre, Manicktalla<br>
+                    Phone: +91 1234567890<br>
+                    <select id="slot-gyne-sunita">
+                        <option>10am - 11am</option>
+                        <option>11am - 12pm</option>
+                        <option>1pm - 2pm</option>
+                        <option>2pm - 3pm</option>
+                    </select>
+                    <button onclick="bookAppointment('Dr. Sunita Verma', 'slot-gyne-sunita')">Book Slot</button>
+                </li>
+                <li>
+                    <strong>Dr. Shreya Chakraborty</strong><br>
+                    12/3A lakhotia Medical Centre, Manicktalla<br>
+                    Phone: +91 1234567890<br>
+                    <select id="slot-gyne-shreya">
+                        <option>10am - 11am</option>
+                        <option>11am - 12pm</option>
+                        <option>1pm - 2pm</option>
+                        <option>2pm - 3pm</option>
+                    </select>
+                    <button onclick="bookAppointment('Dr. Shreya Chakraborty', 'slot-gyne-shreya')">Book Slot</button>
+                </li>
+                <li>
+                    <strong>Dr. Muskan Sharma</strong><br>
+                    9B Medionn Healthcare, Ghasbagan<br>
+                    Phone: +91 1234567890<br>
+                    <select id="slot-gyne-muskan">
+                        <option>10am - 11am</option>
+                        <option>11am - 12pm</option>
+                        <option>1pm - 2pm</option>
+                        <option>2pm - 3pm</option>
+                    </select>
+                    <button onclick="bookAppointment('Dr. Muskan Sharma', 'slot-gyne-muskan')">Book Slot</button>
+                </li>
+            </ul>
+
+            <!-- Cardiologists -->
+            <h3>Cardiologists</h3>
+            <ul>
+                <li>
+                    <strong>Dr. Sutanu Sarkar</strong><br>
+                    10A Sarkar Clinic, Howrah<br>
+                    Phone: +91 1234567890<br>
+                    <select id="slot-cardio-sutanu">
+                        <option>10am - 11am</option>
+                        <option>11am - 12pm</option>
+                        <option>1pm - 2pm</option>
+                        <option>2pm - 3pm</option>
+                    </select>
+                    <button onclick="bookAppointment('Dr. Sutanu Sarkar', 'slot-cardio-sutanu')">Book Slot</button>
+                </li>
+                <li>
+                    <strong>Dr. Aman Dhanuka</strong><br>
+                    9B Medionn Healthcare, Ghasbagan<br>
+                    Phone: +91 1234567890<br>
+                    <select id="slot-cardio-aman">
+                        <option>10am - 11am</option>
+                        <option>11am - 12pm</option>
+                        <option>1pm - 2pm</option>
+                        <option>2pm - 3pm</option>
+                    </select>
+                    <button onclick="bookAppointment('Dr. Aman Dhanuka', 'slot-cardio-aman')">Book Slot</button>
+                </li>
+                <li>
+                    <strong>Dr. Anita Kumari</strong><br>
+                    30A Ganguly Street, Belur<br>
+                    Phone: +91 1234567890<br>
+                    <select id="slot-cardio-anita">
+                        <option>10am - 11am</option>
+                        <option>11am - 12pm</option>
+                        <option>1pm - 2pm</option>
+                        <option>2pm - 3pm</option>
+                    </select>
+                    <button onclick="bookAppointment('Dr. Anita Kumari', 'slot-cardio-anita')">Book Slot</button>
+                </li>
+            </ul>
+
+            <!-- Dermatologists -->
+            <h3>Dermatologists</h3>
+            <ul>
+                <li>
+                    <strong>Dr. Shreyosi Ghosh</strong><br>
+                    9B Medionn Healthcare, Ghasbagan<br>
+                    Phone: +91 1234567890<br>
+                    <select id="slot-derma-shreyosi">
+                        <option>10am - 11am</option>
+                        <option>11am - 12pm</option>
+                        <option>1pm - 2pm</option>
+                        <option>2pm - 3pm</option>
+                    </select>
+                    <button onclick="bookAppointment('Dr. Shreyosi Ghosh', 'slot-derma-shreyosi')">Book Slot</button>
+                </li>
+                <li>
+                    <strong>Dr. Sukanta Majumdar</strong><br>
+                    23 Amherst Street, Burrabazar<br>
+                    Phone: +91 1234567890<br>
+                    <select id="slot-derma-sukanta">
+                        <option>10am - 11am</option>
+                        <option>11am - 12pm</option>
+                        <option>1pm - 2pm</option>
+                        <option>2pm - 3pm</option>
+                    </select>
+                    <button onclick="bookAppointment('Dr. Sukanta Majumdar', 'slot-derma-sukanta')">Book Slot</button>
+                </li>
+                <li>
+                    <strong>Dr. Megha Singh</strong><br>
+                    9B Medionn Healthcare, Ghasbagan<br>
+                    Phone: +91 1234567890<br>
+                    <select id="slot-derma-megha">
+                        <option>10am - 11am</option>
+                        <option>11am - 12pm</option>
+                        <option>1pm - 2pm</option>
+                        <option>2pm - 3pm</option>
+                    </select>
+                    <button onclick="bookAppointment('Dr. Megha Singh', 'slot-derma-megha')">Book Slot</button>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="container">
+        <small><a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a></small>
+    </footer>
+
+    <script>
+        function bookAppointment(doctor, slotId) {
+            const timeSlot = document.getElementById(slotId).value;
+            const url = `confirm.html?doctor=${encodeURIComponent(doctor)}&time=${encodeURIComponent(timeSlot)}`;
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>

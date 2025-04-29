@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Medical Care - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Medical Care</strong></li>
+        </ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="appointment.html">Appointments</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section>
+            <hgroup>
+                <h2>Contact Us</h2>
+                <h3>We’re Here to Help</h3>
+            </hgroup>
+            <p>If you have any questions, feel free to reach out to us through the contact form below.</p>
+            <form class="grid">
+                <input type="text" id="name" name="name" placeholder="Your Name" aria-label="Your Name" required />
+                <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Your Email" required />
+                <textarea id="message" name="message" placeholder="Your Message" aria-label="Your Message" required></textarea>
+                <button type="submit" onclick="event.preventDefault()">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="container">
+        <small><a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a></small>
+    </footer>
+</body>
+</html>
